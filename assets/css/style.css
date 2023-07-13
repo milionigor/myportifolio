@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(48, 210, 220, 0.53) 0%, #74C78B 51.31%, rgba(7, 7, 7, 0.90) 100%);
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+header::after{
+    content: '';
+    display: inline-block;
+    position:absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/header.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+header .foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+header .titulo{
+    text-align: center;
+}
+.informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.informacao p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.13rem;
+}
+.informacao p:before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
